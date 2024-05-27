@@ -105,4 +105,3 @@ Si deseas contribuir a este proyecto, por favor sigue los pasos a continuación:
 Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para obtener más información.
 
 ```
-
