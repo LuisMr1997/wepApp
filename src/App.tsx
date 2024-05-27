@@ -1,4 +1,4 @@
-import ConteinerGit from "./Screens/Conteiner";
+import ConteinerGit from "./screens/Conteiner";
 
 function App() {
   return (

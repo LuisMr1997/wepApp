@@ -1,11 +1,11 @@
 ```markdown
-# API Gif React App
+# WEB APP React App
 
-Este proyecto es una aplicación de React para buscar y mostrar GIFs utilizando la API de Pexels. Utiliza `pnpm` para la gestión de dependencias y Docker para la contenedorización.
+Este proyecto es una aplicación de React para buscar y mostrar imagenes utilizando la API de Pexels asi mismo el analisis de las mismas con Imagga. Utiliza `pnpm` para la gestión de dependencias y Docker para la contenedorización.
 
 ## Requisitos
 
-- Node.js (versión 14 o superior)
+- Node.js (versión 16.16 o superior)
 - `pnpm` (versión 6 o superior)
 - Docker
 
@@ -14,24 +14,14 @@ Este proyecto es una aplicación de React para buscar y mostrar GIFs utilizando 
 1. **Clona el repositorio:**
 
    ```bash
-   git clone https://github.com/tu-usuario/api_gif.git
-   cd api_gif
+   git clone https://github.com/LuisMr1997/wepApp
+   cd webApp
    ```
 
 2. **Instala las dependencias usando `pnpm`:**
 
    ```bash
    pnpm install
-   ```
-
-## Configuración
-
-1. **Configura las variables de entorno:**
-
-   Crea un archivo `.env` en la raíz del proyecto con las siguientes variables de entorno:
-
-   ```env
-   VITE_PEXELS_API_KEY=tu_clave_de_api_de_pexels
    ```
 
 ## Ejecución en Desarrollo
@@ -42,20 +32,20 @@ Para ejecutar la aplicación en modo de desarrollo, usa el siguiente comando:
 pnpm dev
 ```
 
-Esto iniciará el servidor de desarrollo en `http://localhost:3000` (o en otro puerto si el 3000 está ocupado).
+Esto iniciará el servidor de desarrollo en `http://localhost:3001` (o en otro puerto si el 3000 está ocupado).
 
 ## Construcción y Ejecución con Docker
 
 1. **Construye la imagen Docker:**
 
    ```bash
-   docker build -t api_gif .
+   docker build -t web_app .
    ```
 
 2. **Ejecuta el contenedor Docker:**
 
    ```bash
-   docker run -p 3001:3001 api_gif
+   docker run -p 3001:3001 web_app
    ```
 
    Esto expondrá la aplicación en `http://localhost:3001`.
@@ -68,12 +58,11 @@ api_gif/
 ├── public/
 ├── src/
 │   ├── components/
-│   ├── hooks/
-│   ├── pages/
+│   ├── screens/
 │   ├── App.tsx
-│   ├── index.tsx
+│   ├── index.css
+│   ├── main.tsx
 │   └── vite-env.d.ts
-├── .env
 ├── .gitignore
 ├── Dockerfile
 ├── package.json

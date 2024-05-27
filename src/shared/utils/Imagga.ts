@@ -4,7 +4,7 @@ export const autoTagImage = async (imageUrl: string) => {
   try {
     const apiUrl = `${baseUrlIg}${encodeURIComponent(imageUrl)}`;
 
-    console.log("🚀 ~ autoTagImage ~ apiUrl:", apiUrl);
+    
     const response = await fetch(apiUrl, {
       headers: {
         Authorization: `Basic ${btoa(`${apiKeyIg}:${srApiKeyIg}`)}`,
